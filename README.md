@@ -61,7 +61,7 @@ To be able to run the examples, demos, and exercises in this tutorial,
 the following packages must be installed::
 
     numpy >= 0.0.0,
-    kernprof >= 0.0.0,
+    line_profiler >= 0.0.0,
     cython >= 0.0.0
     mpi4py >= 0.0.0,
     pathos >= 0.0.0,
@@ -81,7 +81,7 @@ All packages can be installed with `pip`::
 
     >$ pip install setuptools
     >$ pip install numpy
-    >$ pip install kernprof
+    >$ pip install line_profiler
     >$ pip install cython
     >$ pip install pathos
     >$ pip install mpi4py
@@ -126,7 +126,7 @@ The following steps were used by the tutorial author to test on Windows:
     # installed Microsoft MPI v6
     >$ conda install pip
     >$ conda install setuptools
-    >$ conda install kernprof
+    >$ conda install line_profiler
     >$ conda install numpy
     >$ conda install cython
     # get https://github.com/uqfoundation/pox/blob/master/tools/pythonstartup

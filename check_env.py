@@ -11,7 +11,7 @@ import sys
 # requirements
 has = dict(
     # parallel programming
-    kernprof='0.0.0',
+    line_profiler='0.0.0',
     dill='0.2.4',
     # parallel computing
     mpi4py='0.0.0',
@@ -34,7 +34,7 @@ has = dict(
 # executables
 run = dict(
     # parallel programming
-   #kernprof=('lineprofiler',),
+    line_profiler=('lineprofiler.py','kernprof.py',),
     dill=('get_objgraph.py',),
     # parallel computing
     mpi4py=['mpiexec','mpirun','mpiexec-mpich-mp','mpiexec-openmpi-mp','mpirun-mpich-mp','mpirun-openmpi-mp'],
