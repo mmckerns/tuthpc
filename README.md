@@ -78,6 +78,8 @@ and optionally::
     IPython >= 3.0.0,
     paramiko >= 1.15.2,
     numexpr >= 2.4,
+    llvmlite >= 0.2.2,
+    numba >= 0.17.0,
     pyina >= 0.2a1.dev0
 
 
@@ -104,12 +106,14 @@ and optionally::
     >$ pip install "ipython[parallel]"
     >$ pip install paramiko
     >$ pip install numexpr
+    >$ pip install llvmlite
+    >$ pip install numba
     >$ pip install git+https://github.com/uqfoundation/pyina.git@master
 
 
-The install of `numpy` can fail.  A more stable choice for installing 
-`numpy` is to use a scientific python distribution such as `canopy` or
-`anaconda`.
+The install of `numpy` and `llvmlite` can fail.  A more stable choice for
+installing these two packages is to use a scientific python distribution
+such as `canopy` or `anaconda`.
 
 
 Note that on windows, `mpi4py` is known to be a difficult install, and

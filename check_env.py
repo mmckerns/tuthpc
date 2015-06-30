@@ -30,6 +30,10 @@ has = dict(
     numexpr='2.4',
     paramiko='1.15.2',
    #objgraph='1.7.2',
+    llvmlite='0.2.2',
+    numba='0.17.0',
+   #guppy='0.1.10',
+   #pympler='0.4.1',
 )
 
 
