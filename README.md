@@ -60,17 +60,25 @@ Requirements
 To be able to run the examples, demos, and exercises in this tutorial,
 the following packages must be installed::
 
-    numpy >= 0.0.0,
-    line_profiler >= 0.0.0,
-    cython >= 0.0.0
-    mpi4py >= 0.0.0,
-    pathos >= 0.0.0,
+    numpy >= 1.0,
+    flake8 >= 2.0,
+    line_profiler >= 1.0,
+    nose >= 1.3.1,
+    cython >= 0.22,
+    mpi4py >= 1.3.1,
+    pox >= 0.2.2.dev0,
+    dill >= 0.2.4.dev0,
+    multiprocess >= 0.70.3,
+    ppft >= 1.6.4.5,
+    pathos >= 0.2a1.dev0
 
 
 and optionally::
 
-    pyina >= 0.0.0,
-    IPython >= 0.0.0
+    IPython >= 3.0.0,
+    paramiko >= 1.15.2,
+    numexpr >= 2.4,
+    pyina >= 0.2a1.dev0
 
 
 
@@ -81,16 +89,22 @@ All packages can be installed with `pip`::
 
     >$ pip install setuptools
     >$ pip install numpy
+    >$ pip install flake8
     >$ pip install line_profiler
+    >$ pip install nose
     >$ pip install cython
-    >$ pip install pathos
+    >$ pip install git+https://github.com/uqfoundation/pox.git@master
+    >$ pip install git+https://github.com/uqfoundation/dill.git@master
+    >$ pip install git+https://github.com/uqfoundation/pathos.git@master
     >$ pip install mpi4py
 
 
 and optionally::
 
-    >$ pip install pyina
-    >$ pip install ipython, ipython-parallel
+    >$ pip install "ipython[parallel]"
+    >$ pip install paramiko
+    >$ pip install numexpr
+    >$ pip install git+https://github.com/uqfoundation/pyina.git@master
 
 
 The install of `numpy` can fail.  A more stable choice for installing 
@@ -106,9 +120,9 @@ compatible wheel at either of these two locations::
     https://ci.appveyor.com/api/buildjobs/38i20k6b1r4xn65q/artifacts/
 
 
-The optional install for `ipython-parallel` is known to be difficult,
-and commonly fails with `pip (or `conda`, etc).  Compatible wheels may
-be available at this location::
+The optional install for `ipython-parallel` and `numexpr` also can be 
+difficult, and commonly fails with `pip (or `conda`, etc).  Compatible
+wheels may be available at this location::
 
     http://www.lfd.uci.edu/~gohlke/pythonlibs
 
@@ -126,7 +140,9 @@ The following steps were used by the tutorial author to test on Windows:
     # installed Microsoft MPI v6
     >$ conda install pip
     >$ conda install setuptools
+    >$ conda install flake8
     >$ conda install line_profiler
+    >$ conda install nose
     >$ conda install numpy
     >$ conda install cython
     # get https://github.com/uqfoundation/pox/blob/master/tools/pythonstartup
@@ -135,7 +151,9 @@ The following steps were used by the tutorial author to test on Windows:
     # fix bug where conda doesn't respect all `sys.argv`
     #   regedit HKEY_CLASSES_ROOT\Applications\python27.exe\shell\open\command
     #   regedit HKEY_CLASSES_ROOT\py_auto_file\shell\open\command
-    >$ pip install pathos
+    >$ pip install git+https://github.com/uqfoundation/pox.git@master
+    >$ pip install git+https://github.com/uqfoundation/dill.git@master
+    >$ pip install git+https://github.com/uqfoundation/pathos.git@master
     >$ pip install https://ci.appveyor.com/api/buildjobs/38i20k6b1r4xn65q/artifacts/dist/mpi4py-2.0.0a0-cp27-none-win_amd64.whl
 
 
@@ -148,4 +166,12 @@ To test your installation, change to the tutorial directory, and run::
     >$ python check_env.py
     OK.
 
+
+If you choose not install all optional dependencies, you will see a warning::
+
+    >$ python check_env.py 
+    pyina:: No module named pyina
+
+
+Feel free to ignore warnings for optional dependencies.
 

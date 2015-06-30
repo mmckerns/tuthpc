@@ -11,41 +11,44 @@ import sys
 # requirements
 has = dict(
     # parallel programming
-    line_profiler='0.0.0',
-    dill='0.2.4',
+    numpy='1.0',
+    flake8='2.0',
+    line_profiler='1.0',
+    nose='1.3.1',
+    dill='0.2.4.dev0',
     # parallel computing
-    mpi4py='0.0.0',
-    pathos='0.0.0',
-    cython='0.0.0',
+    mpi4py='1.3.1',
+    pathos='0.2a1.dev0',
+    cython='0.22',
     # dependencies
-    pox='0.0.0',
-    multiprocess='0.0.0',
-    ppft='0.0.0',
-    # examples
-    numpy='0.0.0',
+    pox='0.2.2.dev0',
+    multiprocess='0.70.3',
+    ppft='1.6.4.5',
     # optional
-    IPython='0.0.0',
-    paramiko='0.0.0',
-    pyina='0.0.0',
-    objgraph='0.0.0',
+    IPython='3.0.0',
+    pyina='0.2a1.dev0',
+    numexpr='2.4',
+    paramiko='1.15.2',
+   #objgraph='1.7.2',
 )
 
 
 # executables
 run = dict(
     # parallel programming
-    line_profiler=('lineprofiler.py','kernprof.py',),
-    dill=('get_objgraph.py',),
+    flake8=['flake8','flake8-2.7'],
+    line_profiler=('kernprof',),
+    nose=['nosetests','nosetests-2.7'],
+   #dill=('get_objgraph.py',),
     # parallel computing
     mpi4py=['mpiexec','mpirun','mpiexec-mpich-mp','mpiexec-openmpi-mp','mpirun-mpich-mp','mpirun-openmpi-mp'],
-   #pathos=('pathos_tunnel.py','pathos_server.py','tunneled_pathos_server.py',),
+    pathos=('pathos_tunnel.py','pathos_server.py','tunneled_pathos_server.py',),
     # dependencies
     ppft=('ppserver.py',),
-    # examples
     # optional
-   #IPython=('ipython*','ipcluster',),
-   #paramiko=('ssh','scp',),
-   #pyina=('sync','cp','rm','ezpool.py','ezscatter.py',),
+    IPython=['ipcluster','ipcluster-2.7','ipcluster2-2.7'],
+    pyina=('sync','cp','rm','ezpool.py','ezscatter.py',),
+    paramiko=('ssh','scp',),
 )
 
 
@@ -58,6 +61,7 @@ for module in has.keys():
         exec('%s = __module__' % module)
     except ImportError:
         print("%s:: %s" % (module, sys.exc_info()[1]))
+        run.pop(module, None)
         returns += 1
 
 
@@ -99,7 +103,7 @@ for module,executables in run.items():
 
 # final report
 if not returns:
-    print('\nOK.')
+    print('OK.')
 
 sys.exit(returns)
 
