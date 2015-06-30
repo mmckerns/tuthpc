@@ -121,7 +121,7 @@ compatible wheel at either of these two locations::
 
 
 The optional install for `ipython-parallel` and `numexpr` also can be 
-difficult, and commonly fails with `pip (or `conda`, etc).  Compatible
+difficult, and commonly fails with `pip` (or `conda`, etc).  Compatible
 wheels may be available at this location::
 
     http://www.lfd.uci.edu/~gohlke/pythonlibs
