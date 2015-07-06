@@ -6,6 +6,7 @@ wants to extend Python into High-Performance Computing. The tutorial will
 provide hands-on examples and essential performance tips every developer
 should know for writing effective parallel Python. The result will be a clear
 sense of possibilities and best practices using Python in HPC environments.
+
 Many of the examples you often find on parallel Python focus on the mechanics
 of getting the parallel infrastructure working with your code, and not on
 actually building good portable parallel Python. This tutorial is intended to
@@ -14,14 +15,18 @@ well suited to both the beginner and the veteran developer. Parallel efficiency
 starts with the speed of the target code itself, so we will start with how to
 evolve code from for-loops to Python looping constructs and vector programming.
 We will also discuss tools and techniques to optimize your code for speed and
-memory performance. The tutorial will overview working with the common parallel
+memory performance.
+
+The tutorial will overview working with the common parallel
 communication technologies (threading, multiprocessing, MPI) and introduce the
 use of parallel programming models such as blocking and non-blocking pipes,
 asynchronous and iterative conditional maps, and map-reduce. We will discuss
 strategies for extending parallel workflow to utilize hierarchical and
 heterogeneous computing, distributed parallel computing, and job schedulers.
 We then return our focus to the speeding up our target code by leveraging
-parallelism within compiled code using Cython. At the end of the tutorial,
+parallelism within compiled code using Cython.
+
+At the end of the tutorial,
 participants should be able to write simple parallel Python scripts, make use
 of effective parallel programming techniques, and have a framework in place to
 leverage the power of Python in High-Performance Computing.
@@ -71,15 +76,14 @@ the following packages must be installed::
     multiprocess >= 0.70.3,
     ppft >= 1.6.4.5,
     pathos >= 0.2a1.dev0
+    llvmlite >= 0.2.2,
+    numba >= 0.17.0,
 
 
 and optionally::
 
     IPython >= 3.0.0,
     paramiko >= 1.15.2,
-    numexpr >= 2.4,
-    llvmlite >= 0.2.2,
-    numba >= 0.17.0,
     pyina >= 0.2a1.dev0
 
 
@@ -99,15 +103,14 @@ All packages can be installed with `pip`::
     >$ pip install git+https://github.com/uqfoundation/dill.git@master
     >$ pip install git+https://github.com/uqfoundation/pathos.git@master
     >$ pip install mpi4py
+    >$ pip install llvmlite
+    >$ pip install numba
 
 
 and optionally::
 
     >$ pip install "ipython[parallel]"
     >$ pip install paramiko
-    >$ pip install numexpr
-    >$ pip install llvmlite
-    >$ pip install numba
     >$ pip install git+https://github.com/uqfoundation/pyina.git@master
 
 
@@ -124,9 +127,9 @@ compatible wheel at either of these two locations::
     https://ci.appveyor.com/api/buildjobs/38i20k6b1r4xn65q/artifacts/
 
 
-The optional install for `ipython-parallel` and `numexpr` also can be 
-difficult, and commonly fails with `pip` (or `conda`, etc).  Compatible
-wheels may be available at this location::
+The optional install for `ipython-parallel` also can be difficult, and
+commonly fails with `pip` (or `conda`, etc).  Compatible wheels may be
+available at this location::
 
     http://www.lfd.uci.edu/~gohlke/pythonlibs
 
@@ -159,6 +162,7 @@ The following steps were used by the tutorial author to test on Windows:
     >$ pip install git+https://github.com/uqfoundation/dill.git@master
     >$ pip install git+https://github.com/uqfoundation/pathos.git@master
     >$ pip install https://ci.appveyor.com/api/buildjobs/38i20k6b1r4xn65q/artifacts/dist/mpi4py-2.0.0a0-cp27-none-win_amd64.whl
+    >$ conda install numba
 
 
 

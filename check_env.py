@@ -20,6 +20,8 @@ has = dict(
     mpi4py='1.3.1',
     pathos='0.2a1.dev0',
     cython='0.22',
+    llvmlite='0.2.2',
+    numba='0.17.0',
     # dependencies
     pox='0.2.2.dev0',
     multiprocess='0.70.3',
@@ -27,13 +29,13 @@ has = dict(
     # optional
     IPython='3.0.0',
     pyina='0.2a1.dev0',
-    numexpr='2.4',
+   #numexpr='2.4',
     paramiko='1.15.2',
    #objgraph='1.7.2',
-    llvmlite='0.2.2',
-    numba='0.17.0',
    #guppy='0.1.10',
    #pympler='0.4.1',
+   #scoop='???',
+   #MPI_import='???',
 )
 
 
