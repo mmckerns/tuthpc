@@ -1,3 +1,45 @@
+# List of file written by the notebook
+# Generated using: ack-grep -h "%%file " | cut -d" " -f6 | cut -d'\' -f1 | sort | uniq
+allpool.py
+bubblesort.py
+fib.pyx
+hellompi.py
+http_search.py
+jobscript.sh
+looping.py
+mpibroadcasted.py
+mpipt2pt2.py
+mpipt2pt.py
+mpiscattered.py
+mprocess.py
+multihello.py
+multi_sync.py
+numba_mandel.py
+numpyshared.py
+optimize.py
+pi.pyx
+profile_strategy2.py
+profile_strategy.py
+profiling.py
+pyinapool.py
+queuepipe.py
+roll.py
+runppft.py
+setup2.py
+setup.py
+sharedobj.py
+sharedproxy.py
+sleepy.py
+state.py
+strategy.py
+test_squared_map.py
+timing.py
+trials.py
+use_roll.py
+use_strategy.py
+use_trials.py
+
+
 # Created by https://www.gitignore.io
 
 ### Python ###
