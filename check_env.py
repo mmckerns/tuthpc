@@ -120,7 +120,8 @@ for module,executables in run.items():
 
 # final report
 if not returns:
-    print('OK.')
+    print('-'*50)
+    print('OK.  All required items installed.')
 
 sys.exit(returns)
 
