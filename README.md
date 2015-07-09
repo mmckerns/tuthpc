@@ -105,6 +105,7 @@ All packages can be installed with `pip`::
     >$ pip install mpi4py
     >$ pip install llvmlite
     >$ pip install numba
+    >$ pip install ppft
 
 
 and optionally::
