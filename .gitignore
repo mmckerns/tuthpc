@@ -1,0 +1,108 @@
+# List of file written by the notebook
+# Generated using: ack-grep -h "%%file " | cut -d" " -f6 | cut -d'\' -f1 | sort | uniq
+allpool.py
+bubblesort.py
+fib.pyx
+hellompi.py
+http_search.py
+jobscript.sh
+looping.py
+mpibroadcasted.py
+mpipt2pt2.py
+mpipt2pt.py
+mpiscattered.py
+mprocess.py
+multihello.py
+multi_sync.py
+numba_mandel.py
+numpyshared.py
+optimize.py
+pi.pyx
+profile_strategy2.py
+profile_strategy.py
+profiling.py
+pyinapool.py
+queuepipe.py
+roll.py
+runppft.py
+setup2.py
+setup.py
+sharedobj.py
+sharedproxy.py
+sleepy.py
+state.py
+strategy.py
+test_squared_map.py
+timing.py
+trials.py
+use_roll.py
+use_strategy.py
+use_trials.py
+
+
+# Created by https://www.gitignore.io
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+#  Usually these files are written by a python script from a template
+#  before PyInstaller builds the exe, so as to inject date/other infos into it.
+*.manifest
+*.spec
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*,cover
+
+# Translations
+*.mo
+*.pot
+
+# Django stuff:
+*.log
+
+# Sphinx documentation
+docs/_build/
+
+# PyBuilder
+target/
+
+
+### IPythonNotebook ###
+# Temporary data
+.ipynb_checkpoints/
+
