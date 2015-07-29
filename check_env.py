@@ -23,7 +23,7 @@ has = dict(
     llvmlite='0.2.2',
     numba='0.17.0',
     # dependencies
-    pox='0.2.2.dev0',
+    pox='0.2.2',
     multiprocess='0.70.3',
     ppft='1.6.4.5',
     # optional
