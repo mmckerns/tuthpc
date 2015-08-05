@@ -72,7 +72,7 @@ the following packages must be installed::
     cython >= 0.22,
     mpi4py >= 1.3.1,
     pox >= 0.2.2,
-    dill >= 0.2.4.dev0,
+    dill >= 0.2.4,
     multiprocess >= 0.70.3,
     ppft >= 1.6.4.5,
     pathos >= 0.2a1.dev0
@@ -99,7 +99,6 @@ All packages can be installed with `pip`::
     >$ pip install line_profiler
     >$ pip install nose
     >$ pip install cython
-    >$ pip install git+https://github.com/uqfoundation/dill.git@master
     >$ pip install git+https://github.com/uqfoundation/pathos.git@master
     >$ pip install mpi4py
     >$ pip install llvmlite
@@ -157,7 +156,6 @@ The following steps were used by the tutorial author to test on Windows:
     # fix bug where conda doesn't respect all `sys.argv`
     #   regedit HKEY_CLASSES_ROOT\Applications\python27.exe\shell\open\command
     #   regedit HKEY_CLASSES_ROOT\py_auto_file\shell\open\command
-    >$ pip install git+https://github.com/uqfoundation/dill.git@master
     >$ pip install git+https://github.com/uqfoundation/pathos.git@master
     >$ pip install https://ci.appveyor.com/api/buildjobs/38i20k6b1r4xn65q/artifacts/dist/mpi4py-2.0.0a0-cp27-none-win_amd64.whl
     >$ conda install numba

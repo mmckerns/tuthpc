@@ -15,7 +15,7 @@ has = dict(
     flake8='2.0',
     line_profiler='1.0',
     nose='1.3.1',
-    dill='0.2.4.dev0',
+    dill='0.2.4',
     # parallel computing
     mpi4py='1.3.1',
     pathos='0.2a1.dev0',
