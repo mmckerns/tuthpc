@@ -15,16 +15,16 @@ has = dict(
     flake8='2.0',
     line_profiler='1.0',
     nose='1.3.1',
-    dill='0.2.4',
+    dill='0.2.5',
     # parallel computing
-    mpi4py='1.3.1',
+    mpi4py='2.0.0',
     pathos='0.2a1.dev0',
     cython='0.22',
     llvmlite='0.2.2',
     numba='0.17.0',
     # dependencies
     pox='0.2.2',
-    multiprocess='0.70.3',
+    multiprocess='0.70.4',
     ppft='1.6.4.5',
     # optional
     IPython='3.0.0',
