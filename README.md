@@ -70,10 +70,10 @@ the following packages must be installed::
     line_profiler >= 1.0,
     nose >= 1.3.1,
     cython >= 0.22,
-    mpi4py >= 1.3.1,
+    mpi4py >= 2.0.0,
     pox >= 0.2.2,
-    dill >= 0.2.4,
-    multiprocess >= 0.70.3,
+    dill >= 0.2.5,
+    multiprocess >= 0.70.4,
     ppft >= 1.6.4.5,
     pathos >= 0.2a1.dev0
     llvmlite >= 0.2.2,
@@ -168,13 +168,14 @@ Verification
 To test your installation, change to the tutorial directory, and run::
 
     >$ python check_env.py
-    OK.
+    OK.  All required items installed.
 
 
 If you choose not install all optional dependencies, you will see a warning::
 
     >$ python check_env.py 
     pyina:: No module named pyina
+    OK.  All required intems installed.
 
 
 Feel free to ignore warnings for optional dependencies.
