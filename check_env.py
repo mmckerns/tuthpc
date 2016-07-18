@@ -18,7 +18,7 @@ has = dict(
     dill='0.2.5',
     # parallel computing
     mpi4py='2.0.0',
-    pathos='0.2a1.dev0',
+    pathos='0.2.0',
     cython='0.22',
     llvmlite='0.2.2',
     numba='0.17.0',
