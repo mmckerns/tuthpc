@@ -28,7 +28,7 @@ has = dict(
     ppft='1.6.4.5',
     # optional
     IPython='3.0.0',
-    pyina='0.2a1.dev0',
+    pyina='0.2.0.dev0',
    #numexpr='2.4',
     paramiko='1.15.2',
    #objgraph='1.7.2',

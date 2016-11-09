@@ -84,7 +84,7 @@ and optionally::
 
     IPython >= 3.0.0,
     paramiko >= 1.15.2,
-    pyina >= 0.2a1.dev0
+    pyina >= 0.2.0.dev0
 
 
 
