@@ -1,3 +1,9 @@
+#!/usr/bin/env python
+#
+# Author: Mike McKerns (mmckerns @caltech and @uqfoundation)
+# Copyright (c) 2016-2022 Mike McKerns.
+# License: 3-clause BSD.
+
 import os
 notebookdir = os.environ.get('NOTEBOOKDIR', '.')
 os.environ['PYTHONPATH'] = ':'.join([
