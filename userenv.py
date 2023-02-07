@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 #
 # Author: Mike McKerns (mmckerns @caltech and @uqfoundation)
-# Copyright (c) 2016-2022 Mike McKerns.
+# Copyright (c) 2016-2023 Mike McKerns.
 # License: 3-clause BSD.
 
 import os
